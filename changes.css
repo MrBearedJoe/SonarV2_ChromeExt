@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", serif;
+}
+
+.layoutMainHeader .secondary .layoutStats > .stat {
+  margin-right: 1rem !important;
+}
+
+.cardWrapper.accountDueNowCardWrapper .card--twoFace {
+  display: flex;
+  flex-direction: row;
+}
+.cardWrapper.accountDueNowCardWrapper .card--twoFace > * {
+  flex: 1 auto;
+}
+[data-text][data-text~="currency"] {
+  font-family: "Roboto Mono", monospace;
+}
+
+@media (width < 1080px) {
+  .accountBillingOverviewTop .card .layoutStats {
+    justify-content: space-between;
+  }
+  .accountBillingOverviewTop .card .layoutStats > .stat {
+    margin-right: 1rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
+[aria-label]:hover:after {
+  animation-delay: 0s !important;
+}
+.usersHereWrapper div.usersHere.expanded {
+  min-width: unset !important;
+}
+
+.personal .avatar .userAvatar {
+  background: url('data:image/svg+xml,<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><circle cx="12" cy="9" r="3" stroke="%232cbfff" stroke-width="1.5"></circle><path d="M17.9691 20C17.81 17.1085 16.9247 15 11.9999 15C7.07521 15 6.18991 17.1085 6.03076 20" stroke="%232cbfff" stroke-width="1.5" stroke-linecap="round"></path><path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="%232cbfff" stroke-width="1.5" stroke-linecap="round"></path></g></svg>') !important;
+}
+
+.keep--notes--wrapper {
+  position: fixed;
+  bottom: 1.7rem;
+  right: 2rem;
+  z-index: 1;
+  display: flex;
+  align-items: end;
+
+  & .note-header {
+    padding: unset;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  & .note-body {
+    display: none;
+    padding: 0.5rem;
+    width: 14rem;
+    height: 15rem;
+    max-width: 25rem;
+    max-height: 25rem;
+    background: var(--body-background);
+    color: var(--colors--neutral--white4);
+    border-radius: 0.5rem;
+    opacity: 0.9;
+  }
+  & .display {
+    display: block !important;
+  }
+}
+
+h3#phraseWrapper img {
+  max-height: 15rem !important;
+}
+span.required,
+span.input--label--requiredSymbol {
+  color: red;
+  font-size: medium;
+  position: relative;
+}
+
+span.required:hover::after {
+  content: "Required";
+  position: absolute;
+  background: hsl(0, 0%, 0%, 0.5);
+  font-size: smaller;
+  color: white;
+  text-align: center;
+  border-radius: 0.2rem;
+  padding: 0.5rem 0.8rem;
+  z-index: 1000;
+  top: 0.3rem;
+  left: 0.2rem;
+}
+
+.d-none {
+  display: none;
+}
+.historyTable thead {
+  background-color: var(--colors--neutral--white4);
+}
+.historyTable th,
+.historyTable td {
+  font-size: 0.85rem !important;
+  padding: 0.3rem 0.6rem !important;
+}
+.title {
+  font-weight: bold;
+}
+.display--ipAssignment--line {
+  font-weight: bold;
+}
+.schedule--row > .info .worker {
+  height: 40px !important;
+}
+.scheduling--job.scheduling--job--calendar {
+  padding: unset !important;
+}
+
+.scheduling--job .controls--wrapper .jobIconButton {
+  width: unset !important;
+  height: unset !important;
+  line-height: unset !important;
+}
+.scheduling--job .body > .info > div:last-child > .title .secondary {
+  display: none !important;
+}
+.scheduling--job,
+.scheduling--job .body {
+  margin: unset !important;
+  min-height: unset !important;
+}
+.scheduling--dispatcher > .queue > .body > .scheduling--jobWrapper {
+  margin: 0.2rem 0.2rem !important;
+}
+.scheduling--dispatcher > .scheduleBody .calendar .timeIndicator--arrow {
+  height: 70dvh !important;
+  width: 2px !important;
+  opacity: 0.6 !important;
+}
+.scheduling--dispatcher > .queue > .body {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+}
+.scheduling--jobWrapper .helpers {
+  top: -15px;
+  left: 10px;
+  z-index: inherit;
+}
+.scheduling--job.scheduling--job--calendar {
+  padding: 0.29rem !important;
+  height: 2.5rem;
+}
+.scheduling--job.scheduling--job--calendar.complete {
+  border-width: medium;
+}
+.filtersInterface.context--topBar > .filterBlock {
+  margin: 0 !important;
+}
+
+.scheduling--dispatcher > .queue > .header > .tabbed.mode--pill,
+.scheduling--dispatcher
+  > .scheduleBody
+  > .calendar
+  > .header
+  > .tabbed.mode--pill {
+  display: flex;
+  flex-direction: row;
+}
+.tabbed--tabsWrapper.mode--pill,
+.tabbed--tabsWrapper.mode--table {
+  flex-wrap: unset !important;
+  margin-right: 1rem;
+  margin-bottom: unset !important;
+}
+.scheduling--job .controls--wrapper {
+  margin-top: 3px;
+  padding-top: 3px;
+}
+.scheduling--job .body > .info {
+  padding-top: 5px;
+  margin-left: 20px !important;
+}
+
+.scheduling--job.scheduling--job--queue {
+  padding: unset !important;
+}
+.hover-list {
+  flex-flow: row !important;
+  font-size: 0.9rem;
+  margin-top: -1rem;
+  padding: unset !important;
+  height: var(--buttons--smallHeight);
+  background: rgba(255, 255, 255, 0.15) !important;
+  pointer-events: none;
+}
+.main .title div[title="Accounts"].icon.icon-Account.icon--type--small {
+  display: none;
+}
+.groupCount > span {
+  display: none !important;
+}
+.hover-list > .hover-list-item {
+  pointer-events: none;
+}
+span.timezoneSelector {
+  display: none;
+}
+
+.mainLayout--wrapper > .header {
+  position: sticky;
+  top: 0;
+}
+
+.ipAssignmentsEntity--wrapper table > tbody > tr > td:nth-child(1) {
+  display: flex !important;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  /*background-color: #4a5a68;*/
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px hsla(0, 50%, 70%, 0.13);
+}
+
+div.stat div.value span[data-text="number"] {
+  font-weight: bolder;
+}
+.usersHereWrapper {
+  right: 80vw !important;
+  left: unset !important;
+  top: -2.8rem !important;
+  scale: 1.6;
+  z-index: 2;
+}
+
+.tags [data-label="delinquent"] {
+  display: block !important;
+  margin: 0.5rem 0 0 0 !important;
+  font-size: 1rem !important;
+  text-align: center;
+  padding: 0.5rem 1rem !important;
+  font-weight: bold !important;
+  animation: blinkingText 2s infinite;
+  cursor: pointer;
+}
+.viewer--renderedContent {
+  max-width: 80% !important;
+}
+
+@keyframes blinkingText {
+  0% {
+    background-color: hsl(344 100% 55% / 0.5);
+  }
+  10% {
+    background-color: hsl(344 100% 55% / 0.6);
+  }
+  20% {
+    background-color: hsl(344 100% 55% / 0.7);
+  }
+  30% {
+    background-color: hsl(344 100% 55% / 0.8);
+  }
+  40% {
+    background-color: hsl(344 100% 55% / 0.9);
+  }
+  50% {
+    background-color: hsl(344 100% 55%);
+  }
+  60% {
+    background-color: hsl(344 100% 55% / 0.9);
+  }
+  70% {
+    background-color: hsl(344 100% 55% / 0.8);
+  }
+  80% {
+    background-color: hsl(344 100% 55% / 0.7);
+  }
+  90% {
+    background-color: hsl(344 100% 55% / 0.6);
+  }
+  100% {
+    background-color: hsl(344 100% 55% / 0.5);
+  }
+}
+
+.accountShow--tabs
+  .accountOverview--Index
+  .display--AccountService--card:has(.title)
+  .details {
+  display: none;
+}
+/* account tabs on left float */
+.accountShow--tabs .tabbed--contentWrapper.mode--pageDocked {
+  overflow-x: unset !important;
+  overflow: scroll;
+  max-height: 78dvh;
+}
+.accountShow--tabs .tabbed--tabsWrapper.mode--pageDocked {
+  display: flex !important;
+  flex-direction: column;
+  /* flex: 1 auto; */
+  /* flex-grow: 1; */
+  max-width: 300px;
+  min-width: 200px;
+  /* width: 20rem; */
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+.page--layout > .page--contentWrapper:has(> .accountShow-Index) {
+  overflow: hidden !important;
+}
+.tabbed--contentWrapper.mode--pageDocked {
+  padding-bottom: 2rem;
+}
+.accountTransactions--table table tbody tr td,
+.accountsInvoices--index .accountTable--wrapper table tbody tr td {
+  padding-top: var(--ui--small--padding) !important;
+  padding-bottom: var(--ui--small--padding) !important;
+}
+
+.accountBillingOverviewTop {
+  margin: 0.3rem 0 !important;
+  font-size: 1.1rem !important;
+}
+
+@media (min-width: 800px) {
+  #app--sidebar--wrapper
+    #app--sidebar--content
+    .specificDisplayComponent
+    > .details {
+    padding: 0.5rem !important;
+  }
+}
+@media (min-width: 620px) {
+  #app--navigation > .groups > .group > .items > .item {
+    margin-bottom: unset !important;
+  }
+}
+#app--navigation > .groups > .group > .items > .item {
+  margin-bottom: unset !important;
+}
+div.scheduleBody > div.map.hidden {
+  flex: 0 0 0 !important;
+}
+div.scheduleBody > div.map {
+  flex: 0 0 50% !important;
+}
+
+.done {
+  color: dark;
+}
+
+.hover-list {
+  padding-block: 1px;
+  padding-inline: 6px;
+
+  & > *,
+  & > * > * {
+    padding: unset;
+    margin: unset;
+  }
+}
+
+div:has(div .context--schedulingIndex) table {
+  & td {
+    padding: 0.6rem 0.3rem;
+
+    & span {
+      font-size: 0.9rem;
+    }
+  }
+
+  & tr:hover {
+    background-color: hsl(0, 0%, 0%, 0.1) !important;
+  }
+}
+
+.dataTable--paginator {
+  .paginator--controls > * {
+    opacity: unset !important;
+    padding: 0 0.5rem !important;
+
+    .ofTotalPages {
+      opacity: unset !important;
+    }
+  }
+
+  .paginator {
+    background: rgba(9, 82, 128, 0.08);
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+
+    .paginator--controls {
+      justify-content: start;
+      margin: 0 0.5rem;
+    }
+
+    .results {
+      font-size: unset !important;
+      opacity: unset !important;
+      margin: 0.5rem 0;
+      min-width: 10rem;
+    }
+  }
+}
+
+.groups {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+
+  .filterGroup {
+    flex: 1 1 50% !important;
+  }
+}
+
+.groupFilters .advancedFilterItem--wrapper {
+  padding: 0.2rem !important;
+}
+
+.layoutTopBar > .mainControls {
+  margin: 0.5rem 0 !important;
+}
+
+[data-text="small"] {
+  font-size: unset !important;
+}
+
+.ticketOverviewTableCell {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+
+  > * {
+    flex: 50%;
+  }
+}
+
+.tickets--index {
+  & td .ticketEntitiesCell .entity:nth-of-type(2) {
+    margin-top: 0.5rem;
+  }
+
+  & td {
+    padding-top: unset !important;
+    padding-bottom: unset !important;
+    padding-right: unset !important;
+    padding-left: unset !important;
+    padding: 0.5rem !important;
+  }
+}
+
+.customFields {
+  tr td:first-child {
+    font-weight: bold;
+  }
+}
+
+.notes--wrapper {
+  .top .left {
+    display: flex;
+    align-items: center;
+
+    .notes-time {
+      padding-bottom: 0.3rem;
+    }
+  }
+}
+.accounts--index table tr .itemCounts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.accounts--index table tr {
+  border-bottom: 4px solid #212b39 !important;
+}
+.accounts--index table tr td {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+.accountShow--tabs .mapDynamic--wrapper {
+  height: 70dvh !important;
+}
+
+.map--static {
+  max-height: 150px !important;
+}
+.accountOverview--Index
+  .display--address--card
+  .theStuff:has(.mapWrapper)
+  .summary
+  .right {
+  display: none !important;
+}
+.accountOverview--Index
+  .display--address--card
+  .theStuff:has(.mapWrapper)
+  .summary
+  .left {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.accountOverview--Index
+  .display--address--card
+  .theStuff:has(.mapWrapper)
+  .summary
+  .left
+  .fields {
+  margin-top: 5px;
+}
+.accountOverview--Index
+  .display--address--card
+  .theStuff:has(.mapWrapper)
+  .address-icon {
+  /* max-height: 20px; */
+  /* max-width: 20px; */
+  display: none;
+}
+[data-field-name="id"] .value {
+  font-weight: bold;
+}
