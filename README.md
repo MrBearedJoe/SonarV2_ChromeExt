@@ -15,8 +15,8 @@
 
 **What does it do?**
 
-- [x] Removes a lot od passing.
-- [x] Redesigns Schedule que and about of space used for dispatch view
+- [x] Removes a lot of padding.
+- [x] Redesigns Schedule dispatcher view
 - [x] Adds a few minor features
 - [x] and More
 
