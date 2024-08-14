@@ -12,10 +12,10 @@
 **How to install**
 
 1. Download Zip file.
-2. Unzip into a none folder
+2. Unzip into a known folder
 3. Open Chrome
-4. in the url bar go to chrome://extensions
-5. Top Right, toggle on Developer Mode
-6. Click Load unpacked at the top right
+4. Go to **chrome://extensions**
+5. Top Right, toggle on _Developer Mode_
+6. Click _Load unpacked_, at the top right
 7. Select Extension's folder.
-8. Refresh your sonar instance.
+8. Refresh the Sonar instance.
