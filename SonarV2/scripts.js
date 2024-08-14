@@ -177,7 +177,7 @@ let mapStatic = setInterval(() => {
   }
 }, 2000)
 
-//I dont remember what this is for....
+//account group show all
 let hoverItemsShow = setInterval(() => {
   if (document.querySelector(`.hover-list:not(.done)`) != null) {
     const elements = document.querySelectorAll(`.hover-list:not(.done)`)
