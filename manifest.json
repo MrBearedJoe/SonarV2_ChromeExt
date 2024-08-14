@@ -1,0 +1,19 @@
+{
+  "name": "*SonarEditExtensions",
+  "description": "Makes Changes to: SonarV2",
+  "manifest_version": 3,
+  "version": "1.1",
+  "version_name": "1.1",
+  "icons": {
+    "16": "/images/icon16.png",
+    "48": "/images/icon48.png",
+    "128": "/images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://reach4.sonar.software/app*"],
+      "css": ["SonarV2/style.css"],
+      "js": ["SonarV2/scripts.js", "SonarV2/svg.js"]
+    }
+  ]
+}
