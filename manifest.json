@@ -11,7 +11,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://reach4.sonar.software/app*"],
+      "matches": ["https://[yourInstance].sonar.software/app*"],
       "css": ["SonarV2/style.css"],
       "js": ["SonarV2/scripts.js", "SonarV2/svg.js"]
     }

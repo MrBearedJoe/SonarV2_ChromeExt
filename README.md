@@ -1,17 +1,28 @@
 ## Sonar Software V2
 
-### Chrome Extension to change some of the layout and style of your instance
+#### Chrome Extension to change some of the layout and style of your instance
 
-**How to install**
+### How to install
 
-1. Download Zip file.
-2. Unzip into a known folder
-3. Open Chrome
-4. Go to **chrome://extensions**
-5. Top Right, toggle on _Developer Mode_
-6. Click _Load unpacked_, at the top right
-7. Select Extension's folder.
-8. Refresh the Sonar instance.
+**Download,Edit,Save**
+
+- Download Zip file.
+- Unzip into a known folder
+- In folder open "**manifest.json**" with _notepad_ or _code editor_
+- Edit Line 14 to your instance name
+  - "matches": ["https://[yourInstance].sonar.software/app\*"],
+- Save File
+
+**Add extension to chrome**
+
+- Open Chrome
+- Go to **chrome://extensions**
+- Top Right, toggle on _Developer Mode_
+- Click _Load unpacked_, at the top right
+- Select Extension's folder.
+- Refresh the Sonar instance.
+
+---
 
 **What does it do?**
 
