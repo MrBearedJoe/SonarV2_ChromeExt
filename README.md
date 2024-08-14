@@ -30,4 +30,4 @@
 ![Image of Dispatcher loaded using the extension](https://github.com/MrBearedJoe/SonarV2_EditedLayout/blob/main/images/dispatcherViewSS_start.png)
 
 **Opened queue and map**
-![Image of Dispatcher with open que and map using the extension](https://github.com/MrBearedJoe/SonarV2_EditedLayout/blob/main/images/dispatcherViewSS_show)
+![Image of Dispatcher with open que and map using the extension](https://github.com/MrBearedJoe/SonarV2_EditedLayout/blob/main/images/dispatcherViewSS_show.png)
