@@ -2,13 +2,6 @@
 
 ### Chrome Extension to change some of the layout and style of your instance
 
-**What does it do?**
-
-- [x] Removes a lot od passing.
-- [x] Redesigns Schedule que and about of space used for dispatch view
-- [x] Adds a few minor features
-- [x] and More
-
 **How to install**
 
 1. Download Zip file.
@@ -19,3 +12,14 @@
 6. Click _Load unpacked_, at the top right
 7. Select Extension's folder.
 8. Refresh the Sonar instance.
+
+**What does it do?**
+
+- [x] Removes a lot od passing.
+- [x] Redesigns Schedule que and about of space used for dispatch view
+- [x] Adds a few minor features
+- [x] and More
+
+## Account Page
+
+![Image of Account Sonar using the extension](https://github.com/MrBearedJoe/SonarV2_EditedLayout/blob/main/images/accountSS.png)

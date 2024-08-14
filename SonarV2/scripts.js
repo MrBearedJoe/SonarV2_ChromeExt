@@ -418,6 +418,7 @@ let moveAccountCustomFieldsDiv = setInterval(() => {
 }, 2000)
 
 // // NEEDS EDITING IF USED
+// // Item has to have PMP in the modal name
 // // if your using cnmaestro this will take mac and make a link to radio/cpe/ap directly
 // let cnM = setInterval(() => {
 //   if (document.querySelector(".ipAssignmentsEntity--wrapper div.displayModel .display--inventoryItem--line:not(.done)")) {
