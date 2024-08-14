@@ -454,8 +454,6 @@ let moveAccountCustomFieldsDiv = setInterval(() => {
 //       e.classList.add("done")     
 //     }
 //   }
-  
-  
 
 // }, 3000)
 

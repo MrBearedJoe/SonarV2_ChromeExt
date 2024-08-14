@@ -2,6 +2,8 @@
 
 #### Chrome Extension to change some of the layout and style of your instance
 
+##### Note: Some features/changes may take 2-4 seconds to change on page. I have changes other then styles on a "setInterval" that constantly looks for the items to change and makes it has done when change is done.
+
 ### How to install
 
 **Download,Edit,Save**
