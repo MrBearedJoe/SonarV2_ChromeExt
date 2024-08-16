@@ -41,3 +41,11 @@
 
 **Opened queue and map**
 ![Image of Dispatcher with open que and map using the extension](https://github.com/MrBearedJoe/SonarV2_EditedLayout/blob/main/images/dispatcherViewSS_show.png)
+
+## cnMaestro Link (PMP or ePMP ONLY)
+
+> [!IMPORTANT]
+> **Model must have the text "PMP" somewhere is it. IP Must be assigned to the bridge MAC of PMP 450 or the Eth MAC for ePMP**
+> !! In file "SonarV2/cnMaestroLink.js" Line 9 will need to be edited to your instance. All double slashes from line 7 down will need to be removed !!
+
+![Image of link for cnMaestro](https://github.com/MrBearedJoe/SonarV2_EditedLayout/blob/main/images/cnmSS.png)
