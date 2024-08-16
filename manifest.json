@@ -11,9 +11,14 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://[yourInstance].sonar.software/app*"],
+      "matches": ["https://*.sonar.software/app*"],
       "css": ["SonarV2/style.css"],
-      "js": ["SonarV2/scripts.js", "SonarV2/svg.js"]
+      "js": [
+        "SonarV2/svg.js",
+        "SonarV2/onPageLoad.js",
+        "SonarV2/setInterval.js",
+        "SonarV2/cnMaestroLink.js"
+      ]
     }
   ]
 }

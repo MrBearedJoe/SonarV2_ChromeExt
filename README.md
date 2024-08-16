@@ -10,9 +10,6 @@
 
 - Download Zip file.
 - Unzip into a known folder
-- In folder open "**manifest.json**" with _notepad_ or _code editor_
-- Edit Line 14 to your instance name
-  - "matches": ["https://[yourInstance].sonar.software/app\*"],
 - Save File
 
 **Add extension to chrome**

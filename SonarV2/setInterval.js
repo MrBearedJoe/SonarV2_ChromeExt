@@ -1,49 +1,3 @@
-//change style that can not via css
-setTimeout(() => {
-  const root = document.querySelector(':root');
-  const html = document.querySelector('html');
-  root.style.setProperty('font-size', '14px')
-  root.style.setProperty('--text--size--small', '0.85rem')
-  root.style.setProperty('--text--size--h6', '0.85rem')
-  root.style.setProperty('--ui--small--padding', '0.3rem')
-  root.style.setProperty('--ui--basePadding', '0.4rem')
-  root.style.setProperty('--ui--big--padding', '0.6rem')
-  root.style.setProperty('--ui--large--padding', '0.8rem')
-  root.style.setProperty('--ui--xlarge--padding', '1rem')
-  root.style.setProperty('--ui--animation--baseSpeed', '.1s')
-  root.style.setProperty('--gutter', '1rem')
-  html.style.setProperty('font-familty', 'Roboto,Ubuntu,Fira sans-serif;')
-  html.style.setProperty('--input--height', '2.1rem')
-  html.style.setProperty('--input--height--small', '1.6rem')
-}, 0)
-
-//Add notepad to the bottom right that data is save via browser local storage
-setTimeout(() => {
-  const notesWrapper = `
-<div class="keep--notes--wrapper">
-<textarea class="note-body"></textarea>
-  <button type='button' class='note-header'>${notes_svg}</button>
-</div>
-`
-  document.querySelector("html").innerHTML += notesWrapper
-  document.querySelector("button.note-header").addEventListener("click", () => {
-    document.querySelector("textarea.note-body").classList.toggle("display")
-  })
-  let saved = localStorage.keepNotesText;
-  if (saved) document.querySelector("textarea.note-body").value = saved;
-  document.querySelector("textarea.note-body").addEventListener("input", () => {
-    let keeperTextarea = document.querySelector("textarea.note-body")
-    let start = keeperTextarea.selectionStart
-    let end = keeperTextarea.selectionEnd
-    let val = keeperTextarea.value
-    localStorage.setItem('keepNotesText', val)
-    this.setSelectionRange(start, end)
-  })
-}, 0)
-
-//clear logs every minute
-setInterval(() => { console.clear() }, 60000)
-
 //spice loading screen up
 let loading = setInterval(() => {
   if (document.querySelector(`h3#phraseWrapper`)) {
@@ -417,45 +371,6 @@ let moveAccountCustomFieldsDiv = setInterval(() => {
   }
 }, 2000)
 
-// // NEEDS EDITING IF USED
-// // Item has to have PMP in the modal name
-// // if your using cnmaestro this will take mac and make a link to radio/cpe/ap directly
-// let cnM = setInterval(() => {
-//   if (document.querySelector(".ipAssignmentsEntity--wrapper div.displayModel .display--inventoryItem--line:not(.done)")) {
-//     const assigneeMACs = document.querySelectorAll(".ipAssignmentsEntity--wrapper div.displayModel .display--inventoryItem--line:not(.done)")
-//     for (const i in assigneeMACs) {
-//       //EDIT URL
-//       let cnM_SM_URL = `https://[your_cnmaestro_instance]/#/0/home-view/`
-//       let correctMAC = assigneeMACs[i].parentElement.parentElement.children[0].textContent
-//       correctMAC = correctMAC.replace(/\s+/,"")
-//       correctMAC = correctMAC.replace(/\s+/,"")
-//       let e = assigneeMACs[i]
-//       let text = e.textContent
-//       let m = text.split(":")
-//       let mac = `${m[0].substr(-2)}:${m[1]}:${m[2]}:${m[3]}:${m[4]}:${m[5].substr(0,2)}`
-//       mac = correctMAC
-//       if (text.includes("PMP100")) {
-//         continue
-//       }
-//       if (text.includes("AP")) {
-//        cnM_SM_URL += `ap/ap=mac@`
-//       } else { 
-//         cnM_SM_URL += `sm/sm=mac@`
-//       }
-      
-//       if (text.includes("PMP")) {
-//         e.children[1].innerHTML = ` 
-//         <a href="${cnM_SM_URL}${mac}/dashboard/" target='cnM' style="font-weight:bold;font-size:1rem !important;">
-//         ${cnm_svg} 
-//         ${text}
-//         </a>
-//         `
-//       }
-//       e.classList.add("done")     
-//     }
-//   }
-
-// }, 3000)
 
 //User for radius history table
 function diff_minutes(dt2, dt1) {
