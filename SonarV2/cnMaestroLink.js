@@ -2,7 +2,7 @@
 // Item has to have PMP in the modal name
 // IP needs to be assigned to the Ethernet of an ePMP
 // IP needs to be assigned to bridge of PMP 450
-// If your using cnmaestro this will take mac and make a link to radio/cpe/ap directly
+// If your using cnMaestro this will take mac and make a link to radio/cpe/ap directly
 
 // let cnM = setInterval(() => {
 //  //EDIT URL

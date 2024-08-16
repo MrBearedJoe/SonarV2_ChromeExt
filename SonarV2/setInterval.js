@@ -1,4 +1,4 @@
-//spice loading screen up
+//spicy loading screen up
 let loading = setInterval(() => {
   if (document.querySelector(`h3#phraseWrapper`)) {
     const loadingPhrase = document.querySelector(`h3#phraseWrapper:not(.done)`)
@@ -47,7 +47,7 @@ let loading = setInterval(() => {
   }
 }, 100)
 
-//add Adresses to a link in the nav box
+//add Addresses to a link in the nav box under Accounts
 let navigatorBar = setInterval(() => {
 
   if (document.querySelector(`.app--navigation`)) {
@@ -56,18 +56,6 @@ let navigatorBar = setInterval(() => {
     const menuItems = document.querySelector(`.app--navigation .groups .items`)
     menuItems.children[8].remove()
     const billingLink = menuItems.children[1]
-    const settingsLink = menuItems.children[12]
-
-    const addressLink = `
-    <div class="item">
-    <a href="#/accounts/" class="">
-    <div class="navIcon icon icon-accounts icon--type--navigation">
-    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><circle cx="12" cy="10" r="4" class="icon-quaternary"></circle><path class="icon-primary" d="M14.97552,12.65015C14.24292,13.47217,13.18774,14,12,14c-1.18762,0-2.24274-0.52771-2.97534-1.34961C6.62628,13.61182,4.80951,15.68524,4.21002,18.25C6.10425,20.61591,8.96924,21.99506,12,22c3.03076-0.00494,5.89575-1.38409,7.78998-3.75C19.17303,15.61072,17.31287,13.58978,14.97552,12.65015z"></path><path class="icon-tertiary" d="M9.02466,12.65039C8.39453,11.94348,8,11.02155,8,10c0-2.20917,1.79083-4,4-4s4,1.79083,4,4c0,1.02142-0.39447,1.94324-1.02448,2.65015c2.33069,0.93695,4.18561,2.94965,4.80786,5.57794c1.37164-1.70923,2.19659-3.8761,2.19659-6.2381c0-5.51178-4.4682-9.97998-9.97998-9.97998s-9.97998,4.4682-9.97998,9.97998c0,2.362,0.82495,4.52881,2.19659,6.23804C4.82141,15.67371,6.6333,13.60901,9.02466,12.65039z"></path></svg>
-    </div> 
-    <div class="navLabel">Accounts</div>
-    </a>
-    </div>
-    `
     const newItem = document.createElement(`div`)
     newItem.classList.add(`item`)
     const anchorLink = document.createElement(`a`)
@@ -89,7 +77,7 @@ let navigatorBar = setInterval(() => {
   }
 }, 1000)
 
-//change user avatar icon on top right
+//Change User Avatar icon on top right
 let userHereIcons = setInterval(() => {
   if (document.querySelector(`div.usersHere:not(.expanded)`) != null) {
     const userHereDiv = document.querySelector(`div.usersHere:not(.expanded)`)
@@ -131,7 +119,7 @@ let mapStatic = setInterval(() => {
   }
 }, 2000)
 
-//account group show all
+//Account group list show all changes
 let hoverItemsShow = setInterval(() => {
   if (document.querySelector(`.hover-list:not(.done)`) != null) {
     const elements = document.querySelectorAll(`.hover-list:not(.done)`)
@@ -143,7 +131,7 @@ let hoverItemsShow = setInterval(() => {
   }
 }, 2000)
 
-//if links are from v1. will edit to make it v2
+//If account links in notes are from v1. This will edit to make it v2
 let noteLinks = setInterval(() => {
   if (document.querySelector(`.cardWrapper .dataTable--tableWrapper .dataTable--row td div.bottom a:not(.done)`) != null) {
     const elements = document.querySelectorAll(`.cardWrapper .dataTable--tableWrapper .dataTable--row td div.bottom a:not(.done)`)
@@ -158,7 +146,7 @@ let noteLinks = setInterval(() => {
   }
 }, 2000)
 
-//add clipboard icon to the right of account number and click to copy the number
+//Add clipboard icon to the right of account number and click to copy the number
 let copyAccBtn = setInterval(() => {
   if(document.querySelector(`.secondary--content .stat div.value span[data-text="number"]:not(.done)`)){
     let accountIdSpan = document.querySelector(`.secondary--content .stat div.value span[data-text="number"]:not(.done)`)
@@ -178,7 +166,8 @@ let copyAccBtn = setInterval(() => {
   }
 }, 5000)
 
-//edit layout od scheduling dispatcher view. Auto hides que and map and zooms to schedule timeline in 2 clicks
+//Edit layout of Scheduling Dispatcher View. 
+//Auto hides queued jobs and map.
 let scheduleHiddenMenus = setInterval(() => {
   if (document.querySelector("div.scheduleBody > div.map > button:not(.done)")) {
     const hideMap = document.querySelector("div.scheduleBody > div.map > button:not(.done)")
@@ -188,7 +177,7 @@ let scheduleHiddenMenus = setInterval(() => {
     hideJobs.click()
   }
 }, 3000)
-
+//Zooms to schedule timeline in 2 clicks
 let scheduleTimelineResize = setInterval(() => {
   const timelineSize = document.querySelector("#router--wrapper > div.page--layout > div > div > div.content.context--fixedLayout.context--scheduling > div > div > div.scheduleBody > div.calendar > div.body--wrapper > div.body > div.schedule--row.schedule--hours:not(.done)")
   timelineSize.classList.add("done")
@@ -199,7 +188,7 @@ let scheduleTimelineResize = setInterval(() => {
   }
 }, 3000)
 
-//Added copy button next to phone numbers and removed being able to click to call from computer.
+//Adds clipboard icon button next to phone numbers and can click to copy instead of being able to click to call from computer.
 let phoneNumbers = setInterval(() => {
   const phoneLinks = document.querySelectorAll(".phoneLink:not(.done)")
   for (const link of phoneLinks) {
@@ -218,7 +207,7 @@ let phoneNumbers = setInterval(() => {
 
 }, 3000)
 
-//hides radius id and nas and calculates the time between starts and ends.
+//Hides radius_id and NAS. Adds calculates the time between starts and ends, if the table is sorted right...
 let radiusHistoryTable = setInterval(() => {
 
   if (document.querySelectorAll(".accountShow--tabs .dataTable--tableWrapper table.dataTable--table.slim.light.dataTable--table--scroll:not(.done)")) {
@@ -300,7 +289,7 @@ let radiusHistoryTable = setInterval(() => {
   
 }, 2000)
 
-//reformats the layout of tickets
+//Reformats the layout of tickets
 //EDIT with your job names and colors you would like.
 let tickets = setInterval(() => {
 
@@ -372,7 +361,7 @@ let moveAccountCustomFieldsDiv = setInterval(() => {
 }, 2000)
 
 
-//User for radius history table
+//Used for radius history table
 function diff_minutes(dt2, dt1) {
   var diff = (dt2.getTime() - dt1.getTime()) / 1000;
   diff /= 60;
