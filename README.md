@@ -44,8 +44,6 @@
 
 ## cnMaestro Link (PMP or ePMP ONLY)
 
-> [!IMPORTANT]
-> **Model must have the text "PMP" somewhere is it. IP Must be assigned to the bridge MAC of PMP 450 or the Eth MAC for ePMP**
-> !! In file "SonarV2/cnMaestroLink.js" Line 9 will need to be edited to your instance. All double slashes from line 7 down will need to be removed !!
+> [!IMPORTANT] > **Model Name must have the text "PMP" somewhere in it. The assigned Ip must be the bridge MAC of PMP 450 and Eth MAC for ePMP** > [!IMPORTANT] > Additionally, editing file "SonarV2/cnMaestroLink.js" Line 9 will need. Replace [your_cnmaestro_instance] in line 9 with your instance. > [!IMPORTANT] > Lastly, all double slashes (//) from line 7 down will need to be removed.
 
 ![Image of link for cnMaestro](https://github.com/MrBearedJoe/SonarV2_EditedLayout/blob/main/images/cnmSS.png)
