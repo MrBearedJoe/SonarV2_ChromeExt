@@ -33,15 +33,15 @@
 
 ## Account Page
 
-![Image of Account Sonar using the extension](https://github.com/MrBearedJoe/SonarV2_EditedLayout/blob/main/images/accountSS.png)
+![Image of Account Sonar using the extension](https://github.com/MrBearedJoe/SonarV2_ChromeExt/blob/main/images/accountSS.png)
 
 ## Dispatcher Views
 
 **Onload hides queue and map**
-![Image of Dispatcher loaded using the extension](https://github.com/MrBearedJoe/SonarV2_EditedLayout/blob/main/images/dispatcherViewSS_start.png)
+![Image of Dispatcher loaded using the extension](https://github.com/MrBearedJoe/SonarV2_ChromeExt/blob/main/images/dispatcherViewSS_start.png)
 
 **Opened queue and map**
-![Image of Dispatcher with open que and map using the extension](https://github.com/MrBearedJoe/SonarV2_EditedLayout/blob/main/images/dispatcherViewSS_show.png)
+![Image of Dispatcher with open que and map using the extension](https://github.com/MrBearedJoe/SonarV2_ChromeExt/blob/main/images/dispatcherViewSS_show.png)
 
 ## cnMaestro Link (PMP or ePMP ONLY)
 
@@ -49,8 +49,8 @@
 > Additionally, editing file "SonarV2/cnMaestroLink.js" Line 9 will need. Replace [your_cnmaestro_instance] in line 9 with your instance.
 > Lastly, all double slashes (//) from line 7 down will need to be removed.
 
-![Image of link for cnMaestro](https://github.com/MrBearedJoe/SonarV2_EditedLayout/blob/main/images/cnmSS.png)
+![Image of link for cnMaestro](https://github.com/MrBearedJoe/SonarV2_ChromeExt/blob/main/images/cnmSS.png)
 
 ## Ticket style edits
 
-![Image of Ticket style edits](https://github.com/MrBearedJoe/SonarV2_EditedLayout/blob/main/images/ticketSS.png)
+![Image of Ticket style edits](https://github.com/MrBearedJoe/SonarV2_ChromeExt/blob/main/images/ticketSS.png)
